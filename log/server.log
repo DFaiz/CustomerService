@@ -1,0 +1,497 @@
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T08:56:02.885Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T08:56:02.887Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T08:56:02.887Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T08:56:02.887Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T08:56:02.887Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T08:56:02.887Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T08:56:02.895Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T08:56:02.895Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T08:56:02.896Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T08:56:02.897Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T08:56:02.899Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T08:56:04.041Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T08:56:06.394Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T08:56:06.394Z"}
+{"level":"info","message":"Valid customer ID","timestamp":"2017-02-25T08:56:06.394Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T08:56:30.567Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T08:56:30.568Z"}
+{"level":"info","message":"Valid customer ID","timestamp":"2017-02-25T08:56:30.568Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T08:56:30.586Z"}
+{"level":"info","message":"Customer with ID 716360178 was successfully created","timestamp":"2017-02-25T08:56:30.586Z"}
+{"level":"error","message":"11000","timestamp":"2017-02-25T08:56:30.776Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T08:56:33.313Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T08:56:33.313Z"}
+{"level":"info","message":"Valid customer ID","timestamp":"2017-02-25T08:56:33.313Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"716360178\" }","op":{"_id":"716360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b146be9c8f0a18c05be0b0"},{"card_token":"1234567","_id":"58b146be9c8f0a18c05be0af"}],"name":"Leah","__v":0}}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"716360178\" }","op":{"_id":"716360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b146be9c8f0a18c05be0b0"},{"card_token":"1234567","_id":"58b146be9c8f0a18c05be0af"}],"name":"Leah","__v":0}}
+{"level":"error","message":"11000","timestamp":"2017-02-25T08:56:33.484Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T08:57:49.394Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T08:57:49.394Z"}
+{"level":"info","message":"Valid customer ID","timestamp":"2017-02-25T08:57:49.394Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"716360178\" }","op":{"_id":"716360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b146c19c8f0a18c05be0b2"},{"card_token":"1234567","_id":"58b146c19c8f0a18c05be0b1"}],"name":"Leah","__v":0}}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"716360178\" }","op":{"_id":"716360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b146c19c8f0a18c05be0b2"},{"card_token":"1234567","_id":"58b146c19c8f0a18c05be0b1"}],"name":"Leah","__v":0}}
+{"level":"error","message":"11000","timestamp":"2017-02-25T08:57:49.557Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T08:57:59.505Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T08:57:59.506Z"}
+{"level":"info","message":"Valid customer ID","timestamp":"2017-02-25T08:57:59.506Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"716360178\" }","op":{"_id":"716360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b1470d9c8f0a18c05be0b4"},{"card_token":"1234567","_id":"58b1470d9c8f0a18c05be0b3"}],"name":"Leah","__v":0}}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"716360178\" }","op":{"_id":"716360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b1470d9c8f0a18c05be0b4"},{"card_token":"1234567","_id":"58b1470d9c8f0a18c05be0b3"}],"name":"Leah","__v":0}}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T08:58:10.941Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T08:58:10.941Z"}
+{"level":"info","message":"Valid customer ID","timestamp":"2017-02-25T08:58:10.942Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"716360178\" }","op":{"_id":"716360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b1470d9c8f0a18c05be0b4"},{"card_token":"1234567","_id":"58b1470d9c8f0a18c05be0b3"}],"name":"Leah","__v":0}}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"716360178\" }","op":{"_id":"716360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b1470d9c8f0a18c05be0b4"},{"card_token":"1234567","_id":"58b1470d9c8f0a18c05be0b3"}],"name":"Leah","__v":0}}
+{"level":"error","message":"11000","timestamp":"2017-02-25T08:58:11.113Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T08:58:19.876Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T08:58:19.876Z"}
+{"level":"info","message":"Valid customer ID","timestamp":"2017-02-25T08:58:19.876Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"726360178\" }","op":{"_id":"726360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b147229c8f0a18c05be0b8"},{"card_token":"1234567","_id":"58b147229c8f0a18c05be0b7"}],"name":"Leah","__v":0}}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error index: mlab_customers.customers.$_id_ dup key: { : \"726360178\" }","op":{"_id":"726360178","email":"ads@dssa.com","address":"Tel Aviv","credit_card_tokens":[{"card_token":"123456","_id":"58b147229c8f0a18c05be0b8"},{"card_token":"1234567","_id":"58b147229c8f0a18c05be0b7"}],"name":"Leah","__v":0}}
+{"level":"error","message":"11000","timestamp":"2017-02-25T08:58:20.069Z"}
+{"level":"info","message":"Fetch customer request recieved","timestamp":"2017-02-25T08:59:51.762Z"}
+{"level":"info","message":"Fetch customer request recieved","timestamp":"2017-02-25T09:00:00.264Z"}
+{"level":"info","message":"Fetch customer request recieved","timestamp":"2017-02-25T09:00:05.051Z"}
+{"level":"info","message":"Fetch customer request recieved","timestamp":"2017-02-25T09:01:24.411Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:02:40.527Z"}
+{"level":"info","message":"Zero 267789","timestamp":"2017-02-25T09:02:40.528Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:02:40.528Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:02:40.528Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:02:40.528Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:02:40.528Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:02:40.528Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:02:40.529Z"}
+{"name":"Zero 267789","credit_card_tokens":[],"level":"info","message":"","timestamp":"2017-02-25T09:02:40.529Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T09:04:02.213Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T09:04:02.213Z"}
+{"level":"info","message":"Valid customer ID","timestamp":"2017-02-25T09:04:02.213Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:05:06.635Z"}
+{"level":"info","message":"Zero 267789","timestamp":"2017-02-25T09:05:06.636Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:05:06.636Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:05:06.636Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:05:06.636Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:05:06.636Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:05:06.636Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:05:06.636Z"}
+{"name":"Zero 267789","credit_card_tokens":[],"level":"info","message":"","timestamp":"2017-02-25T09:05:06.636Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:06:14.129Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:06:16.410Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:06:16.412Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:06:16.412Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:06:16.412Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:06:16.412Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:06:16.412Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:06:16.420Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:06:16.420Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:06:16.421Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:06:16.422Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:06:16.423Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:06:17.578Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:06:20.871Z"}
+{"level":"info","message":"Zero 267789","timestamp":"2017-02-25T09:06:20.871Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:06:20.872Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:06:20.872Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:06:20.872Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:06:20.872Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:06:20.872Z"}
+{"level":"info","message":"tokens ","timestamp":"2017-02-25T09:06:20.874Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:10:04.234Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:10:06.923Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:10:06.925Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:10:06.925Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:10:06.925Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:10:06.925Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:10:06.925Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:10:06.934Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:10:06.934Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:10:06.934Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:10:06.935Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:10:06.937Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:10:08.131Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:10:17.051Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:10:17.051Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:10:17.051Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:10:17.052Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:10:32.031Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:10:32.032Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:10:32.032Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:10:32.032Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:11:19.434Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:11:19.434Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:11:19.434Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:11:19.435Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:15:16.418Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:15:18.658Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:15:18.660Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:15:18.660Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:15:18.661Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:15:18.661Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:15:18.661Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:15:18.668Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:15:18.668Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:15:18.669Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:15:18.670Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:15:18.671Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:15:19.832Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:15:23.853Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:15:23.853Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:15:23.853Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:15:23.854Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:15:51.321Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:16:28.533Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:16:28.533Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:16:28.533Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:16:28.533Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:16:28.533Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:16:28.533Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:16:28.549Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:16:28.549Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:16:28.549Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:16:28.549Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:16:28.549Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:16:29.655Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:16:32.228Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:16:32.229Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:16:32.229Z"}
+{"name":"Zero 2677819","level":"info","message":"","timestamp":"2017-02-25T09:16:32.229Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:16:32.416Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:20:00.252Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:20:00.253Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:20:00.253Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:20:00.253Z"}
+{"level":"info","message":"true","timestamp":"2017-02-25T09:20:00.255Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:22:39.736Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:22:45.067Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:22:45.067Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:22:45.067Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:22:45.067Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:22:45.067Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:22:45.067Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:22:45.082Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:22:45.082Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:22:45.082Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:22:45.082Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:22:45.082Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:22:46.300Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:22:49.271Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:22:49.271Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:22:49.272Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:22:49.272Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:22:56.726Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:22:56.726Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:22:56.726Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:22:56.727Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:22:56.909Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:23:44.167Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:23:44.168Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:23:44.168Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:23:44.168Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:23:44.323Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:23:47.355Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:23:47.355Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:23:47.355Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:23:47.355Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:23:47.513Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:25:23.385Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:25:23.385Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:25:23.385Z"}
+{"name":"Zero 267789","level":"info","message":"","timestamp":"2017-02-25T09:25:23.386Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:25:23.617Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:25:59.030Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:25:59.030Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:25:59.031Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:25:59.031Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:25:59.179Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:29:19.534Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:29:22.170Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:29:22.170Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:29:22.170Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:29:22.170Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:29:22.170Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:29:22.170Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:29:22.186Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:29:22.186Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:29:22.186Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:29:22.186Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:29:22.186Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:29:23.342Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T09:29:36.021Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T09:29:36.022Z"}
+{"level":"info","message":"Cannot create customer - invalid customer name","timestamp":"2017-02-25T09:29:36.022Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T09:29:53.102Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T09:29:53.103Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:29:53.117Z"}
+{"level":"info","message":"Customer with ID 716360178 was successfully created","timestamp":"2017-02-25T09:29:53.117Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:30:10.912Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:30:10.912Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:30:10.912Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:30:10.913Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:30:11.101Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:37:36.263Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:37:36.263Z"}
+{"name":"Zero s267789","email":"big@gigi.com","level":"info","message":"","timestamp":"2017-02-25T09:37:36.263Z"}
+{"name":"Zero s267789","email":"big@gigi.com","level":"info","message":"","timestamp":"2017-02-25T09:37:36.264Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:37:36.432Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:37:52.284Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:37:52.285Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:37:52.285Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:37:52.285Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:37:52.436Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:38:41.593Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:38:41.593Z"}
+{"name":"Zero s267789","email":"big@gigi.com","level":"info","message":"","timestamp":"2017-02-25T09:38:41.593Z"}
+{"name":"Zero s267789","email":"big@gigi.com","level":"info","message":"","timestamp":"2017-02-25T09:38:41.593Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:38:41.749Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:38:46.387Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:38:46.387Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:38:46.387Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:38:46.387Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:38:46.545Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:39:37.094Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:39:40.526Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:39:40.542Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:39:41.702Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:39:46.350Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:39:46.350Z"}
+{"level":"info","message":"defined","timestamp":"2017-02-25T09:39:46.350Z"}
+{"level":"info","message":"not null","timestamp":"2017-02-25T09:39:46.350Z"}
+{"name":"Zero s267789","email":"big@gigi.com","level":"info","message":"","timestamp":"2017-02-25T09:39:46.350Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:39:46.559Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:39:57.491Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:39:57.492Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:39:57.667Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:45:51.480Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:45:53.560Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:45:53.576Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:45:54.720Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:45:56.730Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:45:56.750Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:45:56.932Z"}
+{"date":"Sat Feb 25 2017 11:45:56 GMT+0200 (Jerusalem Standard Time)","process":{"pid":6304,"uid":null,"gid":null,"cwd":"C:\\Users\\David\\Google Drive\\home assigment","execPath":"D:\\Program Files\\nodejs\\node.exe","version":"v6.10.0","argv":["D:\\Program Files\\nodejs\\node.exe","C:\\Users\\David\\Google Drive\\home assigment\\index.js"],"memoryUsage":{"rss":54988800,"heapTotal":37785600,"heapUsed":19315768,"external":17996333}},"os":{"loadavg":[0,0,0],"uptime":6747.9176126},"trace":[{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.OutgoingMessage.setHeader","line":356,"method":"OutgoingMessage.setHeader","native":false},{"column":10,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":719,"method":"header","native":false},{"column":12,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":164,"method":"send","native":false},{"column":15,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":250,"method":"json","native":false},{"column":25,"file":"assigment\\modules\\index.js","function":"C:\\Users\\David\\Google Drive\\home","line":219,"method":null,"native":false},{"column":16,"file":"C:\\Users\\David\\node_modules\\mongoose\\lib\\model.js","function":"","line":3431,"method":null,"native":false},{"column":21,"file":"C:\\Users\\David\\node_modules\\kareem\\index.js","function":null,"line":273,"method":null,"native":false},{"column":16,"file":"C:\\Users\\David\\node_modules\\kareem\\index.js","function":null,"line":127,"method":null,"native":false},{"column":7,"file":"internal/process/next_tick.js","function":"_combinedTickCallback","line":67,"method":null,"native":false},{"column":9,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":98,"method":"_tickCallback","native":false}],"stack":["Error: Can't set headers after they are sent.","    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)","    at ServerResponse.header (C:\\Users\\David\\node_modules\\express\\lib\\response.js:719:10)","    at ServerResponse.send (C:\\Users\\David\\node_modules\\express\\lib\\response.js:164:12)","    at ServerResponse.json (C:\\Users\\David\\node_modules\\express\\lib\\response.js:250:15)","    at C:\\Users\\David\\Google Drive\\home assigment\\modules\\index.js:219:25","    at Query.<anonymous> (C:\\Users\\David\\node_modules\\mongoose\\lib\\model.js:3431:16)","    at C:\\Users\\David\\node_modules\\kareem\\index.js:273:21","    at C:\\Users\\David\\node_modules\\kareem\\index.js:127:16","    at _combinedTickCallback (internal/process/next_tick.js:67:7)","    at process._tickCallback (internal/process/next_tick.js:98:9)"],"level":"error","message":"uncaughtException: Can't set headers after they are sent.","timestamp":"2017-02-25T09:45:57.033Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:46:15.628Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:46:15.643Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:46:16.737Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:46:18.728Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:46:18.728Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:46:18.921Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:47:26.706Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:47:29.021Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:47:29.021Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:47:29.021Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:47:29.021Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:47:29.021Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:47:29.021Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:47:29.037Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:47:29.037Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:47:29.037Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:47:29.037Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:47:29.037Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:47:30.170Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:47:32.034Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:47:32.044Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:47:32.242Z"}
+{"date":"Sat Feb 25 2017 11:47:32 GMT+0200 (Jerusalem Standard Time)","process":{"pid":5100,"uid":null,"gid":null,"cwd":"C:\\Users\\David\\Google Drive\\home assigment","execPath":"D:\\Program Files\\nodejs\\node.exe","version":"v6.10.0","argv":["D:\\Program Files\\nodejs\\node.exe","C:\\Users\\David\\Google Drive\\home assigment\\index.js"],"memoryUsage":{"rss":54943744,"heapTotal":37785600,"heapUsed":19369704,"external":17988154}},"os":{"loadavg":[0,0,0],"uptime":6843.1611158},"trace":[{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.OutgoingMessage.setHeader","line":356,"method":"OutgoingMessage.setHeader","native":false},{"column":10,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":719,"method":"header","native":false},{"column":12,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":164,"method":"send","native":false},{"column":15,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":250,"method":"json","native":false},{"column":25,"file":"assigment\\modules\\index.js","function":"C:\\Users\\David\\Google Drive\\home","line":219,"method":null,"native":false},{"column":16,"file":"C:\\Users\\David\\node_modules\\mongoose\\lib\\model.js","function":"","line":3431,"method":null,"native":false},{"column":21,"file":"C:\\Users\\David\\node_modules\\kareem\\index.js","function":null,"line":273,"method":null,"native":false},{"column":16,"file":"C:\\Users\\David\\node_modules\\kareem\\index.js","function":null,"line":127,"method":null,"native":false},{"column":7,"file":"internal/process/next_tick.js","function":"_combinedTickCallback","line":67,"method":null,"native":false},{"column":9,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":98,"method":"_tickCallback","native":false}],"stack":["Error: Can't set headers after they are sent.","    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)","    at ServerResponse.header (C:\\Users\\David\\node_modules\\express\\lib\\response.js:719:10)","    at ServerResponse.send (C:\\Users\\David\\node_modules\\express\\lib\\response.js:164:12)","    at ServerResponse.json (C:\\Users\\David\\node_modules\\express\\lib\\response.js:250:15)","    at C:\\Users\\David\\Google Drive\\home assigment\\modules\\index.js:219:25","    at Query.<anonymous> (C:\\Users\\David\\node_modules\\mongoose\\lib\\model.js:3431:16)","    at C:\\Users\\David\\node_modules\\kareem\\index.js:273:21","    at C:\\Users\\David\\node_modules\\kareem\\index.js:127:16","    at _combinedTickCallback (internal/process/next_tick.js:67:7)","    at process._tickCallback (internal/process/next_tick.js:98:9)"],"level":"error","message":"uncaughtException: Can't set headers after they are sent.","timestamp":"2017-02-25T09:47:32.283Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:49:33.778Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:49:33.794Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:49:35.003Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:49:55.256Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:49:55.257Z"}
+{"level":"info","message":"Invalid email format","timestamp":"2017-02-25T09:49:55.258Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:50:33.207Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:50:35.350Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:50:35.353Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:50:35.353Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:50:35.353Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:50:35.353Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:50:35.353Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:50:35.361Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:50:35.361Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:50:35.362Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:50:35.363Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:50:35.364Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:50:36.502Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:51:45.252Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:51:47.488Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:51:47.491Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:51:47.491Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:51:47.491Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:51:47.491Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:51:47.491Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:51:47.499Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:51:47.499Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:51:47.500Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:51:47.501Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:51:47.502Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:51:48.669Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:52:27.018Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:52:29.115Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:52:29.118Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:52:29.118Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:52:29.118Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:52:29.118Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:52:29.118Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:52:29.126Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:52:29.126Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:52:29.126Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:52:29.127Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:52:29.129Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:52:30.269Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:52:42.544Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:52:44.840Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:52:44.842Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:52:44.842Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:52:44.842Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:52:44.842Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:52:44.842Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:52:44.850Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:52:44.850Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:52:44.851Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:52:44.852Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:52:44.853Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:52:45.940Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T09:52:50.439Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T09:52:50.439Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:52:50.460Z"}
+{"level":"info","message":"Customer with ID 716360178 was successfully created","timestamp":"2017-02-25T09:52:50.460Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:53:08.306Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:53:08.308Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:53:08.530Z"}
+{"date":"Sat Feb 25 2017 11:53:08 GMT+0200 (Jerusalem Standard Time)","process":{"pid":6572,"uid":null,"gid":null,"cwd":"C:\\Users\\David\\Google Drive\\home assigment","execPath":"D:\\Program Files\\nodejs\\node.exe","version":"v6.10.0","argv":["D:\\Program Files\\nodejs\\node.exe","C:\\Users\\David\\Google Drive\\home assigment\\index.js"],"memoryUsage":{"rss":57229312,"heapTotal":37785600,"heapUsed":23093696,"external":18165219}},"os":{"loadavg":[0,0,0],"uptime":7179.4430635},"trace":[{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.OutgoingMessage.setHeader","line":356,"method":"OutgoingMessage.setHeader","native":false},{"column":10,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":719,"method":"header","native":false},{"column":12,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":164,"method":"send","native":false},{"column":15,"file":"C:\\Users\\David\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":250,"method":"json","native":false},{"column":25,"file":"assigment\\modules\\index.js","function":"C:\\Users\\David\\Google Drive\\home","line":225,"method":null,"native":false},{"column":16,"file":"C:\\Users\\David\\node_modules\\mongoose\\lib\\model.js","function":"","line":3431,"method":null,"native":false},{"column":21,"file":"C:\\Users\\David\\node_modules\\kareem\\index.js","function":null,"line":273,"method":null,"native":false},{"column":16,"file":"C:\\Users\\David\\node_modules\\kareem\\index.js","function":null,"line":127,"method":null,"native":false},{"column":7,"file":"internal/process/next_tick.js","function":"_combinedTickCallback","line":67,"method":null,"native":false},{"column":9,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":98,"method":"_tickCallback","native":false}],"stack":["Error: Can't set headers after they are sent.","    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)","    at ServerResponse.header (C:\\Users\\David\\node_modules\\express\\lib\\response.js:719:10)","    at ServerResponse.send (C:\\Users\\David\\node_modules\\express\\lib\\response.js:164:12)","    at ServerResponse.json (C:\\Users\\David\\node_modules\\express\\lib\\response.js:250:15)","    at C:\\Users\\David\\Google Drive\\home assigment\\modules\\index.js:225:25","    at Query.<anonymous> (C:\\Users\\David\\node_modules\\mongoose\\lib\\model.js:3431:16)","    at C:\\Users\\David\\node_modules\\kareem\\index.js:273:21","    at C:\\Users\\David\\node_modules\\kareem\\index.js:127:16","    at _combinedTickCallback (internal/process/next_tick.js:67:7)","    at process._tickCallback (internal/process/next_tick.js:98:9)"],"level":"error","message":"uncaughtException: Can't set headers after they are sent.","timestamp":"2017-02-25T09:53:08.561Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:54:05.260Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:54:05.262Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:54:05.262Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:54:05.262Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:54:05.262Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:54:05.263Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:54:05.270Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:54:05.270Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:54:05.271Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:54:05.272Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:54:05.273Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:54:06.430Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:54:13.861Z"}
+{"level":"info","message":"Create customer request recieved","timestamp":"2017-02-25T09:54:28.777Z"}
+{"level":"info","message":"Valid email format","timestamp":"2017-02-25T09:54:28.777Z"}
+{"level":"info","message":"","timestamp":"2017-02-25T09:54:28.797Z"}
+{"level":"info","message":"Customer with ID 716360178 was successfully created","timestamp":"2017-02-25T09:54:28.797Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:54:32.162Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:54:43.034Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:54:43.034Z"}
+{"level":"info","message":"Invalid email format","timestamp":"2017-02-25T09:54:43.035Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:55:17.139Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:55:17.140Z"}
+{"name":"Zero s267789","address":"Haifa","level":"info","message":"","timestamp":"2017-02-25T09:55:17.140Z"}
+{"level":"error","message":"Customer could not be updated","timestamp":"2017-02-25T09:55:17.328Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:56:07.591Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:56:09.678Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:56:09.680Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:56:09.680Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:56:09.680Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:56:09.680Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:56:09.680Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:56:09.688Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:56:09.688Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:56:09.688Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:56:09.689Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:56:09.691Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:56:10.858Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:56:22.194Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:56:22.194Z"}
+{"name":"Zero s267789","address":"New York","level":"info","message":"","timestamp":"2017-02-25T09:56:22.194Z"}
+{"level":"error","message":"Customer could not be updated undefined","timestamp":"2017-02-25T09:56:22.387Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:57:35.203Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:57:37.332Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:57:37.335Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:57:37.335Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:57:37.335Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:57:37.335Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:57:37.335Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:57:37.343Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:57:37.343Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:57:37.343Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:57:37.344Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:57:37.346Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:57:38.432Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:57:41.976Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:57:41.976Z"}
+{"name":"Zero s267789","address":"New York","level":"info","message":"","timestamp":"2017-02-25T09:57:41.976Z"}
+{"level":"info","message":"Customer was updated successfully","timestamp":"2017-02-25T09:57:42.185Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:57:52.100Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:57:52.100Z"}
+{"name":"Zero s267789","address":"New York","level":"info","message":"","timestamp":"2017-02-25T09:57:52.100Z"}
+{"level":"info","message":"Customer was updated successfully","timestamp":"2017-02-25T09:57:52.263Z"}
+{"level":"info","message":"connection error:Error: connection timeout","timestamp":"2017-02-25T09:58:00.329Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T09:59:17.970Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:59:20.187Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T09:59:20.189Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T09:59:20.190Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T09:59:20.190Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T09:59:20.190Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T09:59:20.190Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T09:59:20.197Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T09:59:20.197Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T09:59:20.198Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T09:59:20.199Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T09:59:20.200Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T09:59:21.359Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T09:59:26.833Z"}
+{"name":"Zero s267789","level":"info","message":"","timestamp":"2017-02-25T09:59:26.833Z"}
+{"name":"Zero s267789","address":"New York","level":"info","message":"","timestamp":"2017-02-25T09:59:26.849Z"}
+{"level":"info","message":"Customer was updated successfully","timestamp":"2017-02-25T09:59:27.027Z"}
+{"level":"info","message":"Mongoose disconnected on app termination","timestamp":"2017-02-25T10:00:51.013Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T10:00:53.347Z"}
+{"level":"info","message":"******-***************************************************","timestamp":"2017-02-25T10:00:53.350Z"}
+{"level":"info","message":"*********************************************************","timestamp":"2017-02-25T10:00:53.350Z"}
+{"level":"info","message":"Eclipse web server - start up process","timestamp":"2017-02-25T10:00:53.350Z"}
+{"level":"info","message":"Express server mode initialized","timestamp":"2017-02-25T10:00:53.350Z"}
+{"level":"info","message":"using bodyParser()","timestamp":"2017-02-25T10:00:53.350Z"}
+{"level":"info","message":"using bodyParser.text()","timestamp":"2017-02-25T10:00:53.359Z"}
+{"level":"info","message":"initialize HTML directory","timestamp":"2017-02-25T10:00:53.359Z"}
+{"level":"info","message":"initialized HTML directory","timestamp":"2017-02-25T10:00:53.359Z"}
+{"level":"info","message":"binding port 8080 on IP 127.0.0.1","timestamp":"2017-02-25T10:00:53.360Z"}
+{"level":"info","message":"server running at http://127.0.0.1:8080","timestamp":"2017-02-25T10:00:53.362Z"}
+{"level":"info","message":"connected to mongoLab","timestamp":"2017-02-25T10:00:54.494Z"}
+{"level":"info","message":"Update customer request recieved","timestamp":"2017-02-25T10:00:55.411Z"}
+{"level":"info","message":"Delete customer request recieved","timestamp":"2017-02-25T10:02:53.157Z"}
+{"level":"info","message":"Customer could not be deleted","timestamp":"2017-02-25T10:02:53.330Z"}
+{"level":"info","message":"Delete customer request recieved","timestamp":"2017-02-25T10:03:04.853Z"}
+{"level":"info","message":"Customer could not be deleted","timestamp":"2017-02-25T10:03:05.020Z"}
+{"level":"info","message":"Delete customer request recieved","timestamp":"2017-02-25T10:03:11.029Z"}
+{"level":"info","message":"Customer could not be deleted","timestamp":"2017-02-25T10:03:11.183Z"}
+{"level":"info","message":"Delete customer request recieved","timestamp":"2017-02-25T10:03:23.289Z"}
+{"level":"info","message":"Customer with ID 716360178 was successfully deleted","timestamp":"2017-02-25T10:03:23.473Z"}
