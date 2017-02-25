@@ -1,7 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var winston = require('winston');
-
 var assert = require('assert');
 
 var customerManager = require('./modules');
@@ -36,6 +35,27 @@ app.put('/updateCustomer', customerManager.update);
 app.delete('/deleteCustomer', customerManager.delete);
 
 app.get('/getCustomer', customerManager.fetch);
+	
+app.use(function(request, response, next) {
+    let obj = {success: false};
+    if (request.method !== "GET" && request.method !== "DELETE" && request.method !== "PUT" && request.method !== "POST") {
+        obj.msg = request.method + " method not supported";
+		winston.log('info', request.method + ' method not supported');
+		response.status(405).json(obj.msg);
+    } else {
+        obj.msg = "Invalid URL";
+		winston.log('info','Invalid URL');
+		response.status(404).json(obj.msg);
+    }
+});
+
+app.use(function (error, request, response, next) {
+  
+  let obj = {success: false};
+  obj.msg = "The server encountered an unexpected condition which prevented it from fulfilling the request";
+  winston.log('error',error.stack);
+  response.status(500).json(obj.msg);
+});
 	
 winston.log('info', 'binding port 8080 on IP 127.0.0.1');
 app.listen(8080,"127.0.0.1");
