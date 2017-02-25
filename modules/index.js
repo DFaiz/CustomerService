@@ -17,6 +17,9 @@ var regexCustomeridFormat = new RegExp ("^[0-9]{9,9}$");
 exports.create = function(request, response){
 	
 	winston.log('info', 'Create customer request recieved');
+	
+	var customerIdToCreate = request.get('customerid')
+	
 	if (regexEmailFormat.test(request.body.email)) 
 	{
 		winston.log('info', 'Valid email format');
@@ -24,41 +27,41 @@ exports.create = function(request, response){
 	else 
 	{
 		winston.log('info', 'Invalid email format');
-		return response.status(200).json({success: false,msg: 'Email is invalid'});
+		return response.status(400).json({success: false,msg: 'Email is invalid'});
 	}
 		
-	if (regexCustomeridFormat.test(request.body.customerid)) 
+	if (regexCustomeridFormat.test(customerIdToCreate)) 
 	{
 		//winston.log('info', 'Valid customer ID');
 	} 
 	else {
 		//winston.log('info', 'Invalid customer ID');
 		winston.log('info', 'Cannot create customer - invalid customer ID');
-		return response.status(200).json({success: false,msg: 'Customer ID format is invalid'});
+		return response.status(400).json({success: false,msg: 'Customer ID format is invalid'});
 	}
 	
 	if (typeof request.body.name === 'undefined' || request.body.name === null) 
 	{
 		winston.log('info', 'Cannot create customer - invalid customer name');
-		return response.status(200).json({success: false,msg: 'Customer name must contain value'});
+		return response.status(400).json({success: false,msg: 'Customer name must contain value'});
 	}
 	
 	if (typeof request.body.address === 'undefined' || request.body.address === null) 
 	{
 		winston.log('info', 'Cannot create customer - invalid customer address');
-		return response.status(200).json({success: false,msg: 'Customer address must contain value'});
+		return response.status(400).json({success: false,msg: 'Customer address must contain value'});
 	}
 	
 	if (typeof request.body.credit_card_tokens === 'undefined' || request.body.credit_card_tokens === null
 		|| request.body.credit_card_tokens.length === 0 ) 
 	{
 		winston.log('info', 'Cannot create customer - Customer must have at least one token');
-		return response.status(200).json({success: false,msg: 'Customer must have at least one token'});
+		return response.status(400).json({success: false,msg: 'Customer must have at least one token'});
 	}
 		
 	var newCustomer = new Customer(
 				{
-				  _id: request.body.customerid,
+				  _id: customerIdToCreate,
 				  name: request.body.name,
 				  email: request.body.email,
 				  address: request.body.address,
@@ -77,42 +80,45 @@ exports.create = function(request, response){
 		winston.log('error', error_message);
 		if(error_message.code === 11000)
 		{
-			winston.log('error', 'Cannot create customer - user with requested ID already exists ' + request.body.customerid);
-			response.status(401).json({success: false,msg: 'user with requested ID already exists'});
+			winston.log('error', 'Cannot create customer - user with requested ID already exists ' + customerIdToCreate);
+			response.status(400).json({success: false,msg: 'user with requested ID already exists'});
 		}
 		else
 		{
 			winston.log('error', 'Cannot create customer - ' + error_message.err);
-			response.status(401).json({success: false,msg: error_message.err});
+			response.status(400).json({success: false,msg: error_message.err});
 		}
 	}
 	else
 	{
-		winston.log('info', 'Customer with ID ' + request.body.customerid + ' was successfully created');
-		response.status(200).json({success: true,msg: request.body.customerid});
+		winston.log('info', 'Customer with ID ' + customerIdToCreate + ' was successfully created');
+		response.status(201).json({success: true,msg: customerIdToCreate});
 	}
 };
 
 exports.delete = function(request, response){
 	
 	winston.log('info', 'Delete customer request recieved');
-	Customer.findByIdAndRemove(request.body.customerid, function (err,removedCustomer) {
+	
+	var customerIdToDelete = request.get('customerid')
+	
+	Customer.findByIdAndRemove(customerIdToDelete, function (err,removedCustomer) {
 		  if (err) 
 		  {
 			winston.log('error', err);
-			response.status(200).json({success: false,msg: 'Error ocurred ' + err});
+			response.status(400).json({success: false,msg: 'Error ocurred ' + err});
 		  }
 		else
 		{
 		  if (typeof removedCustomer === 'undefined' || removedCustomer === null) 
 		  {
 		    winston.log('info', 'Customer could not be deleted');
-			response.status(200).json({success: false,msg: 'Customer could not be deleted'});
+			response.status(400).json({success: false,msg: 'Customer could not be deleted'});
 		  }
 		  else
 		  {
-			winston.log('info', 'Customer with ID ' + request.body.customerid + ' was successfully deleted');
-		    response.status(200).json({success: true,msg: 'customer with id ' + request.body.customerid + ' was successfully deleted '}); 
+			winston.log('info', 'Customer with ID ' + customerIdToDelete + ' was successfully deleted');
+		    response.status(202).json({success: true,msg: 'customer with id ' + customerIdToDelete + ' was successfully deleted '}); 
 		  }
 		}
 		});
@@ -121,19 +127,21 @@ exports.delete = function(request, response){
 exports.fetch = function(request, response){
 	
 	var fetchedCustomer;
+	var customerIdToFetch = request.get('customerid')
+	
 	winston.log('info', 'Fetch customer request recieved');
 	
-	Customer.findById(request.headers.customerid , function (err, fetchedCustomer){
+	Customer.findById(customerIdToFetch , function (err, fetchedCustomer){
 	  if (err) 
 	  {
 		winston.log('error', err);
-		response.status(200).json({success: false,msg: 'Error ocurred ' + err});
+		response.status(400).json({success: false,msg: 'Error ocurred ' + err});
 	  }
 	  else
 	  {
 		  if (typeof fetchedCustomer === 'undefined' || fetchedCustomer === null) 
 		  {
-			response.status(200).json({success: false,msg: 'Customer could not be found'});
+			response.status(400).json({success: false,msg: 'Customer could not be found'});
 		  }
 		  else
 		  {
@@ -146,20 +154,21 @@ exports.fetch = function(request, response){
 exports.update = function(request, response){
 	
 	var returnedCustomer;
+	var customerIdToUpdate = request.get('customerid')
 	winston.log('info', 'Update customer request recieved');
 	
-	if (typeof request.body.customerid === 'undefined' || request.body.customerid === null || request.body.customerid === "") 
+	if (typeof customerIdToUpdate === 'undefined' || customerIdToUpdate === null || customerIdToUpdate === "") 
 	{
-		return response.status(200).json({success: false,msg: 'Customer could not be updated - no customer ID was provided'});
+		return response.status(400).json({success: false,msg: 'Customer could not be updated - no customer ID was provided'});
 	}
 	
-	if (!regexCustomeridFormat.test(request.body.customerid)) 
+	if (!regexCustomeridFormat.test(customerIdToUpdate)) 
 	{
-		return response.status(200).json({success: false,msg: 'Customer could not be updated - customer ID format invalid'});
+		return response.status(400).json({success: false,msg: 'Customer could not be updated - customer ID format invalid'});
 	}
 	
 	var query = {
-		'_id': request.body.customerid
+		'_id': customerIdToUpdate
 	};
 	
 	var update = {};
@@ -180,7 +189,7 @@ exports.update = function(request, response){
 			if (!regexEmailFormat.test(request.body.email)) 
 			{
 				winston.log('info', 'Invalid email format');
-				return response.status(200).json({success: false,msg: 'Customer could not be updated - Email is invalid'});
+				return response.status(400).json({success: false,msg: 'Customer could not be updated - Email is invalid'});
 			}
 			update['email'] = request.body.email;
 			winston.log('info', update);
@@ -202,7 +211,7 @@ exports.update = function(request, response){
 		{
 			if (request.body.credit_card_tokens.length === 0 ) 
 			{
-				return response.status(200).json({success: false,msg: 'Customer could not be updated - Customer must have at least one token'});
+				return response.status(400).json({success: false,msg: 'Customer could not be updated - Customer must have at least one token'});
 			}
 		
 			update['credit_card_tokens'] = request.body.credit_card_tokens;
@@ -219,14 +228,14 @@ exports.update = function(request, response){
 	Customer.findOneAndUpdate(query, update, options, function(err, returnedCustomer) {
 	  if (err) {
 		winston.log('error', err);
-		response.status(200).json({success: false,msg: 'Error ocurred ' + err});
+		response.status(400).json({success: false,msg: 'Error ocurred ' + err});
 	  }
 	  else
 	  {
 		  if (typeof returnedCustomer === 'undefined' || returnedCustomer === null) 
 		  {
 			winston.log('error', 'Customer could not be updated ' + returnedCustomer);
-			response.status(200).json({success: false,msg: 'Customer could not be updated'});
+			response.status(400).json({success: false,msg: 'Customer could not be updated'});
 		  }
 		  else
 		  {
