@@ -1,18 +1,19 @@
-var User = require('../dao').Customer;
-var winston = require('winston');
+var user = require('../dao').Customer;
+const messages = require('../configuration/messages.js');
+const winston = require('winston');
 var mongoose = require('mongoose');
 var customerSchema = require('../dao').customerSchema;
 var Customer = mongoose.model('customerM', customerSchema);
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 
-var error_message;
 const regexEmailFormat = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$");
 const regexCustomeridFormat = new RegExp ("^[0-9]{9,9}$");
 
+var error_message;
 
 exports.create = function(request, response){
 	
@@ -20,43 +21,35 @@ exports.create = function(request, response){
 	
 	let customerIdToCreate = request.get('customerid')
 	
-	if (regexEmailFormat.test(request.body.email)) 
-	{
-		winston.log('info', 'Valid email format');
-	} 
-	else 
+	if (!regexEmailFormat.test(request.body.email)) 
 	{
 		winston.log('info', 'Invalid email format');
-		return response.status(400).json({success: false,msg: 'Email is invalid'});
+		return response.status(400).json(messages.customerEmailInvalid);
 	}
 		
-	if (regexCustomeridFormat.test(customerIdToCreate)) 
+	if (!regexCustomeridFormat.test(customerIdToCreate)) 
 	{
-		//winston.log('info', 'Valid customer ID');
-	} 
-	else {
-		//winston.log('info', 'Invalid customer ID');
 		winston.log('info', 'Cannot create customer - invalid customer ID');
-		return response.status(400).json({success: false,msg: 'Customer ID format is invalid'});
+		return response.status(400).json(messages.customerIdFormat);
 	}
 	
 	if (typeof request.body.name === 'undefined' || request.body.name === null) 
 	{
 		winston.log('info', 'Cannot create customer - invalid customer name');
-		return response.status(400).json({success: false,msg: 'Customer name must contain value'});
+		return response.status(400).json(messages.customerNameInvalid);
 	}
 	
 	if (typeof request.body.address === 'undefined' || request.body.address === null) 
 	{
 		winston.log('info', 'Cannot create customer - invalid customer address');
-		return response.status(400).json({success: false,msg: 'Customer address must contain value'});
+		return response.status(400).json(messages.customerAddrssInvalid);
 	}
 	
 	if (typeof request.body.credit_card_tokens === 'undefined' || request.body.credit_card_tokens === null
 		|| request.body.credit_card_tokens.length === 0 ) 
 	{
 		winston.log('info', 'Cannot create customer - Customer must have at least one token');
-		return response.status(400).json({success: false,msg: 'Customer must have at least one token'});
+		return response.status(400).json(messages.customerNoToken);
 	}
 		
 	var newCustomer = new Customer(
@@ -81,7 +74,7 @@ exports.create = function(request, response){
 		if(error_message.code === 11000)
 		{
 			winston.log('error', 'Cannot create customer - user with requested ID already exists ' + customerIdToCreate);
-			response.status(400).json({success: false,msg: 'user with requested ID already exists'});
+			response.status(400).json(messages.customerAlrdyExists);
 		}
 		else
 		{
@@ -113,7 +106,7 @@ exports.delete = function(request, response){
 		  if (typeof removedCustomer === 'undefined' || removedCustomer === null) 
 		  {
 		    winston.log('info', 'Customer could not be deleted');
-			response.status(400).json({success: false,msg: 'Customer could not be deleted'});
+			response.status(400).json(messages.customerNotDeleted);
 		  }
 		  else
 		  {
@@ -141,7 +134,7 @@ exports.fetch = function(request, response){
 	  {
 		  if (typeof fetchedCustomer === 'undefined' || fetchedCustomer === null) 
 		  {
-			response.status(400).json({success: false,msg: 'Customer could not be found'});
+			response.status(400).json(messages.customerNotFound);
 		  }
 		  else
 		  {
@@ -159,12 +152,12 @@ exports.update = function(request, response){
 	
 	if (typeof customerIdToUpdate === 'undefined' || customerIdToUpdate === null || customerIdToUpdate === "") 
 	{
-		return response.status(400).json({success: false,msg: 'Customer could not be updated - no customer ID was provided'});
+		return response.status(400).json(messages.customerNotUpdatedNoId);
 	}
 	
 	if (!regexCustomeridFormat.test(customerIdToUpdate)) 
 	{
-		return response.status(400).json({success: false,msg: 'Customer could not be updated - customer ID format invalid'});
+		return response.status(400).json(messages.customerNotUpdatedId);
 	}
 	
 	let query = {
@@ -189,7 +182,7 @@ exports.update = function(request, response){
 			if (!regexEmailFormat.test(request.body.email)) 
 			{
 				winston.log('info', 'Invalid email format');
-				return response.status(400).json({success: false,msg: 'Customer could not be updated - Email is invalid'});
+				return response.status(400).json(messages.customerNotUpdatedEmail);
 			}
 			update['email'] = request.body.email;
 			winston.log('info', update);
@@ -211,7 +204,7 @@ exports.update = function(request, response){
 		{
 			if (request.body.credit_card_tokens.length === 0 ) 
 			{
-				return response.status(400).json({success: false,msg: 'Customer could not be updated - Customer must have at least one token'});
+				return response.status(400).json(messages.customerNotUpdatedNoTkn);
 			}
 		
 			update['credit_card_tokens'] = request.body.credit_card_tokens;
@@ -235,12 +228,12 @@ exports.update = function(request, response){
 		  if (typeof returnedCustomer === 'undefined' || returnedCustomer === null) 
 		  {
 			winston.log('error', 'Customer could not be updated ' + returnedCustomer);
-			response.status(400).json({success: false,msg: 'Customer could not be updated'});
+			response.status(400).json(messages.customerNotUpdated);
 		  }
 		  else
 		  {
 		    winston.log('info', 'Customer was updated successfully');
-			response.status(200).json({success: true,msg: 'Customer was updated successfully'});
+			response.status(200).json(messages.customerUpdated);
 		  }
 	  }
 	});

@@ -1,7 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const winston = require('winston');
-//const assert = require('assert');
+const messages = require('./configuration/messages.js');
+const config = require('./configuration/config.json');
 
 var customerManager = require('./modules');
 
@@ -37,27 +38,24 @@ app.delete('/deleteCustomer', customerManager.delete);
 app.get('/getCustomer', customerManager.fetch);
 	
 app.use(function(request, response, next) {
-    let obj = {success: false};
+
     if (request.method !== "GET" && request.method !== "DELETE" && request.method !== "PUT" && request.method !== "POST") {
-        obj.msg = request.method + " method not supported";
+
 		winston.log('info', request.method + ' method not supported');
-		response.status(405).json(obj.msg);
+		response.status(405).json(messages.error405Msg);
     } else {
-        obj.msg = "Invalid URL";
-		winston.log('info','Invalid URL');
-		response.status(404).json(obj.msg);
+		winston.log('info','Invalid URL request');
+		response.status(404).json(messages.error404Msg);
     }
 });
 
 app.use(function (error, request, response, next) {
   
-  let obj = {success: false};
-  obj.msg = "The server encountered an unexpected condition which prevented it from fulfilling the request";
   winston.log('error',error.stack);
-  response.status(500).json(obj.msg);
+  response.status(500).json(messages.error500Msg);
 });
 	
-winston.log('info', 'binding port 8080 on IP 127.0.0.1');
-app.listen(8080,"127.0.0.1");
-winston.log('info', 'server running at http://127.0.0.1:8080');
-console.log('Server running at http://127.0.0.1:8080/');
+winston.log('info', 'binding port ' + config.port + ' on IP ' + config.host);
+app.listen(config.port,config.host);
+winston.log('info', 'server running at http://' +config.host+':'+config.port);
+console.log('Server running at http://' +config.host+':'+config.port);
