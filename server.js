@@ -1,7 +1,7 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var winston = require('winston');
-var assert = require('assert');
+const express = require('express');
+const bodyParser = require('body-parser');
+const winston = require('winston');
+//const assert = require('assert');
 
 var customerManager = require('./modules');
 

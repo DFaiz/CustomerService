@@ -10,15 +10,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 
 var error_message;
-var regexEmailFormat = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$");
-var regexCustomeridFormat = new RegExp ("^[0-9]{9,9}$");
+const regexEmailFormat = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$");
+const regexCustomeridFormat = new RegExp ("^[0-9]{9,9}$");
 
 
 exports.create = function(request, response){
 	
 	winston.log('info', 'Create customer request recieved');
 	
-	var customerIdToCreate = request.get('customerid')
+	let customerIdToCreate = request.get('customerid')
 	
 	if (regexEmailFormat.test(request.body.email)) 
 	{
@@ -100,7 +100,7 @@ exports.delete = function(request, response){
 	
 	winston.log('info', 'Delete customer request recieved');
 	
-	var customerIdToDelete = request.get('customerid')
+	let customerIdToDelete = request.get('customerid')
 	
 	Customer.findByIdAndRemove(customerIdToDelete, function (err,removedCustomer) {
 		  if (err) 
@@ -126,8 +126,8 @@ exports.delete = function(request, response){
 
 exports.fetch = function(request, response){
 	
-	var fetchedCustomer;
-	var customerIdToFetch = request.get('customerid')
+	let fetchedCustomer;
+	let customerIdToFetch = request.get('customerid')
 	
 	winston.log('info', 'Fetch customer request recieved');
 	
@@ -153,8 +153,8 @@ exports.fetch = function(request, response){
 
 exports.update = function(request, response){
 	
-	var returnedCustomer;
-	var customerIdToUpdate = request.get('customerid')
+	let returnedCustomer;
+	let customerIdToUpdate = request.get('customerid')
 	winston.log('info', 'Update customer request recieved');
 	
 	if (typeof customerIdToUpdate === 'undefined' || customerIdToUpdate === null || customerIdToUpdate === "") 
@@ -167,11 +167,11 @@ exports.update = function(request, response){
 		return response.status(400).json({success: false,msg: 'Customer could not be updated - customer ID format invalid'});
 	}
 	
-	var query = {
+	let query = {
 		'_id': customerIdToUpdate
 	};
 	
-	var update = {};
+	let update = {};
 	
 	if (typeof request.body.name !== 'undefined') 
 	{
@@ -219,7 +219,7 @@ exports.update = function(request, response){
 		}
 	}
 
-	var options = {
+	let options = {
 		upsert: true,				//	Create a new document if the query finds zero documents matching the query.
 		setDefaultsOnInsert : true,	//	When creating a new document, include schema default values. 
 		new: true
