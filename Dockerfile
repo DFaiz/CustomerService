@@ -1,16 +1,16 @@
-FROM node:argon
-MAINTAINER David Faizulaev maysam815@gmail.com
-
-RUN "apt-get update && apt-get clean"
-RUN npm install -g winston
-RUN npm install -g body-parser
-RUN npm install -g mongoose
-RUN npm install -g bluebird
-RUN npm install -g express
-RUN npm install -g nodemon
+# Use Node v4 as the base image.
+FROM node:boron
 
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-EXPOSE 9000
+# Install app dependencies
+COPY package.json /usr/src/app/
+RUN npm install
+
+# Bundle app source
+COPY . /usr/src/app
+
+EXPOSE 8080
+CMD [ "npm", "start" ]
