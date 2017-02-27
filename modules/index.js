@@ -19,7 +19,7 @@ exports.create = function(request, response){
 	
 	winston.log('info', 'Create customer request recieved');
 	
-	let customerIdToCreate = request.get('customerid')
+	let customerIdToCreate = request.body.customerid;
 	
 	if (!regexEmailFormat.test(request.body.email)) 
 	{
@@ -93,7 +93,7 @@ exports.delete = function(request, response){
 	
 	winston.log('info', 'Delete customer request recieved');
 	
-	let customerIdToDelete = request.get('customerid')
+	let customerIdToDelete = request.params.customerid;
 	
 	Customer.findByIdAndRemove(customerIdToDelete, function (err,removedCustomer) {
 		  if (err) 
@@ -120,7 +120,7 @@ exports.delete = function(request, response){
 exports.fetch = function(request, response){
 	
 	let fetchedCustomer;
-	let customerIdToFetch = request.get('customerid')
+	let customerIdToFetch = request.params.customerid;
 	
 	winston.log('info', 'Fetch customer request recieved');
 	
@@ -147,7 +147,7 @@ exports.fetch = function(request, response){
 exports.update = function(request, response){
 	
 	let returnedCustomer;
-	let customerIdToUpdate = request.get('customerid')
+	let customerIdToUpdate = request.params.customerid;
 	winston.log('info', 'Update customer request recieved');
 	
 	if (typeof customerIdToUpdate === 'undefined' || customerIdToUpdate === null || customerIdToUpdate === "") 
