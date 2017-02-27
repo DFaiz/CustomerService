@@ -29,13 +29,13 @@ winston.log('info', 'initialize HTML directory');
 app.use(express.static(__dirname + '/public'));
 winston.log('info', 'initialized HTML directory');
 
-app.post('/createCustomer', customerManager.create);
+app.post('/customers', customerManager.create);
 
-app.put('/updateCustomer', customerManager.update);
+app.put('/customers', customerManager.update);
 
-app.delete('/deleteCustomer', customerManager.delete);
+app.delete('/customers', customerManager.delete);
 
-app.get('/getCustomer', customerManager.fetch);
+app.get('/customers', customerManager.fetch);
 	
 app.use(function(request, response, next) {
 
