@@ -1,4 +1,3 @@
-# Use Node v4 as the base image.
 FROM node:boron
 
 # Create app directory
@@ -13,4 +12,5 @@ RUN npm install
 COPY . /usr/src/app
 
 EXPOSE 8080
+
 CMD [ "npm", "start" ]
