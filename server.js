@@ -31,11 +31,11 @@ winston.log('info', 'initialized HTML directory');
 
 app.post('/customers', customerManager.create);
 
-app.put('/customers', customerManager.update);
+app.put('/customers/:customerId', customerManager.update);
 
-app.delete('/customers', customerManager.delete);
+app.delete('/customers/:customerId', customerManager.delete);
 
-app.get('/customers', customerManager.fetch);
+app.get('/customers/:customerId', customerManager.fetch);
 	
 app.use(function(request, response, next) {
 
